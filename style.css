@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 10px;
+  line-height: 1.6;
+}
+.wrapper {
+  background: hsl(185, 75%, 39%);
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  position: absolute;
+}
+.circle-top {
+  top: -77%;
+  left: -25%;
+}
+.circle-bottom {
+  right: -20%;
+  bottom: -100%;
+}
+.profile-card {
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
+  height: 36rem;
+  width: 34rem;
+  border-radius: 15px;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 2fr 2fr 1.2fr;
+  text-align: center;
+  color: hsl(229, 23%, 23%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+.card-header {
+  background: url("./images/bg-pattern-card.svg");
+}
+.avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-top: -50px;
+}
+.info-name {
+  margin-top: 1.1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.info-name span {
+  font-weight: 400;
+}
+.info-city {
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+}
+.info-name span,
+.info-city,
+.meta {
+  color: hsl(0, 0%, 59%);
+}
+.card-footer {
+  border-top: 1px solid hsla(0, 0%, 59%, 0.377);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card-footer .value {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.card-footer .meta {
+  letter-spacing: 1px;
+}
+.attribution {
+  position: absolute;
+  bottom: 1.5rem;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 58%, 37%);
+}
